@@ -1,0 +1,113 @@
+<!--pages/comfirmorder/comfirmorder.wxml-->
+<view class='error' wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+<form bindsubmit="formSubmit">
+<view bindtap='chooseAddress' class='flex-box' style='position: relative; padding: 20rpx 0; background-color: #fff; border-bottom: 1rpx solid #eee;'>
+  <view class='flex-box row' wx:if="{{!hasChooseAddress}}">
+    <image src="../../image/add.png" style='width: 30rpx; height: 30rpx; margin:0 16rpx 0 30rpx;'></image>
+    <text style='font-size: 26rpx;'>选择收货地址</text>
+  </view>
+  <view class='flex-box col align-items-start' wx:if="{{hasChooseAddress}}" style='padding-left: 30rpx;'>
+    <view style='font-size: 32rpx; color: #000;'>
+      <text style='margin-right: 20rpx;'>{{address.userName}}</text>
+      <text>{{address.telNumber}}</text>
+    </view>
+    <text style='display: inline-block; margin: 14rpx 150rpx 0 0; font-size: 24rpx; color: #999;'>{{address.area}}</text>
+  </view>
+  <view style='position: absolute; right: 30rpx; top: 50%;transform: translateY(-50%);'>
+    <image src="../../image/right-arrow.png" style='width: 30rpx; height: 30rpx;'></image>
+  </view>
+</view>
+<view class='zui-table-view' style='margin-top: 60rpx;'>
+  <view class='zui-table-view-cell'>
+    <image src='../../image/hai.jpg' style='float: left; width: 140rpx; height: 140rpx; margin-right:30rpx;'></image>
+    <text>海之蓝42度480ml (限拍5箱)</text>
+    <text class='zui-f-red' style='position: absolute; bottom: 30rpx; left: 170rpx;'>￥143</text>
+    <view  class='flex-box row' style='position: absolute; bottom: 30rpx; right: 30rpx;'>
+      <text class='decrease' bindtap='decrease'>-</text>
+      <text class='zui-block num'>{{num}}</text>
+      <text class='add' bindtap='add'>+</text>
+    </view>
+  </view>
+  <view class='zui-table-view-cell'>
+    <view class='flex-box justify-content-between'>
+      <text class=''>配送方式</text>
+      <text class='zui-f-gray'>快递(免运费)</text>
+    </view>
+  </view>
+  <view class='zui-table-view-cell'>
+    <view class='flex-box justify-content-between'>
+      <text>可配送地区</text>
+      <text class='zui-f-gray'>湖北省武汉市</text>
+    </view>
+  </view>
+  <view class='zui-table-view-cell'>
+    <view class='flex-box justify-content-between'>
+      <text>使用红包</text>
+      <view>
+        <text class='zui-f-gray'>使用红包余额0元</text> 
+        <switch bindchange="switchChange" style='margin: 0 -10rpx 0 10rpx;' />
+      </view>
+    </view>
+  </view>
+  <view class='zui-table-view-cell'>
+    <view class='flex-box justify-content-between'>
+      <text>发票信息</text>
+      <text class='zui-f-gray'>不开发票</text>
+    </view>
+  </view>
+  <view class='zui-table-view-cell'>
+    <view class='flex-box justify-content-between'>
+      <text>赠品</text>
+      <text class='zui-f-gray'>无</text>
+    </view>
+  </view>
+</view>
+<view style='margin-top: 60rpx;'>
+  <textarea class='textarea' placeholder-class="placeholder" placeholder='订单备注'  show-confirm-bar='true'  cursor-spacing='50'></textarea>
+</view>
+<view class='zui-block zui-marginTop-60'>
+  <view class='zui-unstyled-list'>
+    <view class='li'>
+      <view class='left'>
+        <text>订单金额</text>
+      </view>
+      <view class='right'>
+        <text>￥143</text>
+      </view>
+    </view>
+    <view class='li'>
+      <view class='left'>
+        <text>优惠金额</text>
+      </view>
+      <view class='right'>
+        <text>- ￥0</text>
+      </view>
+    </view>
+    <view class='li'>
+      <view class='left'>
+        <text>使用红包</text>
+      </view>
+      <view class='right'>
+        <text>- ￥0</text>
+      </view>
+    </view>
+    <view class='li'>
+      <view class='left'>
+        <text>运费</text>
+      </view>
+      <view class='right'>
+        <text>+ ￥0</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='zui-pull-right'>
+  <view style='padding: 30rpx; font-size: 26rpx;'>
+    <text>实付金额：</text>
+    <text class='zui-f-red'>￥143</text>
+  </view>
+</view>
+<view class='zui-clearfix' style='padding: 30rpx 30rpx 60rpx;'>
+  <button formType="submit" class='btn' size='50' type='warning' hover-class=''>微信支付</button>
+</view>
+</form>

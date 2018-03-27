@@ -1,0 +1,87 @@
+/* pages/pocket/pocket.wxss */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20rpx 0 90rpx;
+  background-color: #3955A2;
+}
+
+.info .num {
+  width:128rpx;
+  height:128rpx;
+  margin:65rpx 0 20rpx;
+  border-radius:50%;
+  color:#FDAC03;
+  text-align:center;
+  font-size:12vw;
+}
+
+.info .label {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.pocket-btn-group {
+  width: 100%;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #eee;
+  background-color: #fff;
+}
+
+.pocket-btn-group .img {
+  width:50rpx;
+  height:50rpx;
+  margin-right:30rpx;
+}
+
+.flex-item {
+  flex:1;
+  padding: 24rpx 0;
+  text-align:center;
+  font-size:24rpx;
+  color:#333;
+}
+
+.pocket-btn-group .flex-item:first-child {
+  border-right: 1rpx solid #eee;
+}
+
+.block-name {
+  margin-left: 20rpx;
+  padding: 30rpx 0;
+  text-align: left;
+  font-size: 28rpx;
+  color: #707070;
+}
+
+.block-area {
+  padding: 0 20rpx;
+}
+
+.block-area > .flex-box {
+  width: 100%;
+  padding: 30rpx 0;
+  background-color: #fff;
+  border-radius: 10rpx;
+  border: 1rpx solid #eee;
+  justify-content:space-between;
+}
+
+.block-area .icon {
+  width: 55rpx; 
+  height: 55rpx;
+  margin: 0 30rpx 0 20rpx;
+}
+
+.block-area .name {
+  font-size: 28rpx;
+  color: #222;
+}
+
+.block-area .arrow {
+  width: 28rpx; 
+  height: 28rpx;
+  margin-right: 20rpx;
+}

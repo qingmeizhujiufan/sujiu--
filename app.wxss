@@ -1,0 +1,187 @@
+/**app.wxss**/
+page {
+  background-color: #f2f2f2;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.wp-100 {
+  width: 100%;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.qos-list {
+  width: 100%;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #eee;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.qos-list:last-child {
+  margin-bottom: 30px;
+}
+
+.qos-list .icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.qos-list .text {
+  font-size: 28rpx;
+  color: #000;
+}
+
+.qos-list .arrow {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* 基础颜色 */
+.zui-f-gray {
+  color: #999;
+}
+
+.zui-bg-gray {
+  background-color: #999;
+}
+
+.zui-f-red {
+  color: #fe0000;
+}
+
+.zui-bg-red {
+  background-color: #fe0000;
+}
+
+/**区块样式**/
+.zui-block {
+  border: 1rpx solid #eee;
+  border-width: 1rpx 0;
+  background-color: #fff;
+}
+
+/* 外边距样式 */
+.zui-marginTop-60 {
+  margin-top: 60rpx;
+}
+
+/* 浮动 */
+.zui-pull-left {
+  float: left;
+}
+
+.zui-pull-right {
+  float: right;
+}
+
+/* 清除浮动 */
+.zui-clearfix::before,
+.zui-clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/**列表样式**/
+.zui-table-view {
+  padding: 0 0 0 30rpx;
+  border: 1rpx solid #eee; 
+  border-width: 1rpx 0; 
+  background-color: #fff;
+}
+
+.zui-table-view .zui-table-view-cell {
+  position: relative;
+  padding: 20rpx 30rpx 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+  font-size: 26rpx;
+}
+
+.zui-table-view .zui-table-view-cell::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 无序列表样式 */
+.zui-unstyled-list {
+  padding: 0 30rpx;
+  font-size: 22rpx;
+}
+
+.zui-unstyled-list .li {
+  padding: 10rpx 0;
+}
+
+.zui-unstyled-list .li::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.zui-unstyled-list .li .left {
+  float: left;
+  color: #000;
+}
+
+.zui-unstyled-list .li .right {
+  float: right;
+  color: #FE0000;
+}
+
+.textarea {
+  width: 100%;
+  height: 100rpx; 
+  padding: 30rpx;
+  background-color: #fff;
+  border: 1rpx solid #eee;
+  border-width: 1rpx 0;
+  font-size: 26rpx;
+}
+
+.btn {
+  background-color: #FE0000;
+  color: #fff;
+  font-size:30rpx;
+}
+
+.placeholder {
+  font-size: 26rpx;
+}

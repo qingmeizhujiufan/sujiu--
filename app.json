@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/goodsdetail/goodsdetail",
+    "pages/service/service",
+    "pages/pocket/pocket",
+    "pages/comfirmorder/comfirmorder"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3955A2",
+    "navigationBarTitleText": "苏酒生态圈",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#3955A2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "image/service.png",
+        "selectedIconPath": "image/service-active.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me-active.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

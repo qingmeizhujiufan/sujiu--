@@ -1,0 +1,44 @@
+<!--pages/service/service.wxml-->
+<view class='header-top'>
+  <image class='img' src="../../image/service-header.jpg"></image>
+  <text class='text'>有疑问？可以点击下方的按钮哟。</text>
+</view>
+<view style='padding: 26rpx; color: #aaa; font-size: 26rpx;'>
+  <text>常见问题</text>
+</view>
+<view class='flex-box row qos-list' wx:for="{{qosList}}">
+  <view class='flex-box row'>
+    <image class='icon' src="{{item.icon}}"></image>
+    <text class='text'>{{item.title}}</text>
+  </view>
+  <view class='flex-box'>
+    <image class='flex-item arrow' src='../../image/right-arrow.png'></image>
+  </view>
+</view>
+<view class='flex-box row qos-list' style='margin-top: 10px;'>
+  <view class='flex-box row'>
+    <image class='icon' src="../../image/service/sms.png"></image>
+    <text class='text'>问题留言</text>
+  </view>
+  <view class='flex-box'>
+    <image class='flex-item arrow' src='../../image/right-arrow.png'></image>
+  </view>
+</view>
+<view class='flex-box row qos-list' style='margin-top: 10px;'>
+  <view class='flex-box row'>
+    <image class='icon' src="../../image/service/kefu.png"></image>
+    <text class='text'>在线客服</text>
+  </view>
+  <view>
+    <image class='arrow' src='../../image/right-arrow.png'></image>
+  </view>
+</view>
+<view class='flex-box row qos-list' style='margin-top: 10px;'>
+  <view class='flex-box row'>
+    <image class='icon' src="../../image/service/phone.png"></image>
+    <text class='text'>电话客服</text>
+  </view>
+  <view>
+    <image class='arrow' src='../../image/right-arrow.png'></image>
+  </view>
+</view>

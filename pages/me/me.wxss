@@ -1,0 +1,132 @@
+/* pages/me/me.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 30px;
+  background-color: #3955A2;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 5rpx 0 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #C6BF24;
+  font-size: 14px;
+}
+
+.top-btn {
+  width:100%;
+  margin-bottom: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.flex-item {
+  flex:1;
+  padding: 15rpx 0;
+  text-align:center;
+  font-size:24rpx;
+  color:#333;
+}
+
+.top-btn .flex-item:nth-child(1),
+.top-btn .flex-item:nth-child(2) {
+  border-right: 1rpx solid #eee;
+}
+
+.wrap-img {
+  margin: 20rpx 0 15rpx;
+  padding: 8rpx;
+  border-radius: 20rpx;
+}
+
+.wrap-img .img {
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.jifen {
+  background-color: #FDAC03;
+}
+
+.yue {
+  background-color: #D95249;
+}
+
+.kaquan {
+  background-color: #1570C7;
+}
+
+.t-jifen {
+  color: #FDAC03;
+}
+
+.t-yue {
+  color: #D95249;
+}
+
+.t-kaquan {
+  color: #1570C7;
+}
+
+.name {
+  margin-bottom: 10rpx;
+  font-size: 20rpx;
+}
+
+.order-title {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+  background-color: #fff;
+}
+
+.order-title .img {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10rpx 0 20rpx;
+}
+
+.order-title .name {
+  margin-bottom: 0;
+  font-size: 26rpx;
+}
+
+.order-title .flex-box {
+  justify-content: left;
+}
+
+.order-group {
+  width: 100%;
+  background-color: #fff;
+}
+
+.order-group .img {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom:10rpx;
+}
+
+.order-group .name {
+  font-size: 20rpx;
+  color: #707070;
+}
+
+.qos-list {
+  padding: 10rpx 0;
+}
+
+.qos-list .icon {
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 10rpx 0 20rpx;
+
+}

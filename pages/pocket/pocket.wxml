@@ -1,0 +1,51 @@
+<!--pages/pocket/pocket.wxml-->
+<view class='container'>
+  <view class="info">
+    <text class='num'>0</text>
+    <text class="label">钱包余额  (元)</text>
+  </view>
+  <view class="flex-box row pocket-btn-group">
+    <view class='flex-item'>
+      <view class='flex-box row justify-content-center'>
+        <image class='img' src="../../image/pocket/tixian.png"></image>
+         <text>提现</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-box row justify-content-center'>
+        <image class='img' src="../../image/pocket/gouwu.png"></image>
+        <text>购物</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 会员卡 -->
+<view class='block-name'>
+  <text>会员卡</text>
+</view>
+<view class='block-area'>
+  <view class='flex-box row'>
+    <view class='flex-box row'>
+      <image class='icon' src="../../image/pocket/huiyuanka.png"></image>
+      <text class='name'>会员卡 (0)</text>
+    </view>
+    <view class='flex-box'>
+      <image class='flex-item arrow' src='../../image/right-arrow.png'></image>
+    </view>
+  </view>
+</view>
+<!-- 优惠券 -->
+<view class='block-name'>
+  <text>优惠券</text>
+</view>
+<view class='block-area'>
+  <view class='flex-box row'>
+    <view class='flex-box row'>
+      <image class='icon' src="../../image/pocket/youhuiquan.png"></image>
+      <text class='name'>优惠券 (0)</text>
+    </view>
+    <view class='flex-box'>
+      <image class='flex-item arrow' src='../../image/right-arrow.png'></image>
+    </view>
+  </view>
+</view>

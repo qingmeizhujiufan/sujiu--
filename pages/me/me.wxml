@@ -1,0 +1,89 @@
+<!--pages/me/me.wxml-->
+<view class='container'>
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="top-btn">
+      <view class='flex-item'>
+      <view class='flex-box justify-content-center'>
+        <view class='wrap-img jifen'>
+          <image class='img' src="../../image/me/jifen.png"></image>
+        </view>
+        </view>
+        <view class='name'>
+          <text>积分</text>
+          <text class='t-jifen'>0</text>
+        </view>
+      </view>
+      <view class='flex-item'>
+      <view class='flex-box justify-content-center'>
+        <view class='wrap-img yue'>
+          <image class='img' src="../../image/me/yue.png"></image>
+        </view>
+        </view>
+        <view class='name'>
+          <text>余额</text>
+          <text class='t-yue'>0元</text>
+        </view>
+      </view>
+      <view class='flex-item'>
+        <view class='flex-box justify-content-center'>
+          <view class='wrap-img kaquan'>
+            <image class='img' src="../../image/me/kaquan.png"></image>
+          </view>
+        </view>
+        <view class='name'>
+          <text>卡券</text>
+          <text class='t-kaquan'>0张</text>
+        </view>
+      </view>
+  </view>
+  <view class='order-title wp-100'>
+    <view class='flex-box row'>
+      <image class='img' src="../../image/me/my-all.png"></image>
+      <text class='name'>我的订单</text>
+    </view>
+  </view>
+  <view class='flex-box row order-group'>
+    <view class='flex-item'>
+      <view class='flex-box col'>
+        <image class='img' src="../../image/me/daizhifu.png"></image>
+        <text class='name'>待支付</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-box col'>
+        <image class='img' src="../../image/me/daifahuo.png"></image>
+        <text class='name'>待发货</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-box col'>
+        <image class='img' src="../../image/me/daishouhuo.png"></image>
+        <text class='name'>待收货</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-box col'>
+        <image class='img' src="../../image/me/yishouhuo.png"></image>
+        <text class='name'>已收货</text>
+      </view>
+    </view>
+    <view class='flex-item'>
+      <view class='flex-box col'>
+        <image class='img' src="../../image/me/all.png"></image>
+        <text class='name'>全部订单</text>
+      </view>
+    </view>
+  </view>
+  <view class='flex-box row qos-list' bindtap="tapQos" style='margin-top: 50rpx;'>
+    <view class='flex-box row'>
+      <image class='icon' src="../../image/me/kefu.png"></image>
+      <text class='text'>客服</text>
+    </view>
+    <view class='flex-box'>
+      <image class='flex-item arrow' src='../../image/right-arrow.png'></image>
+    </view>
+  </view>
+</view>

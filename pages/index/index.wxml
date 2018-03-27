@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top-btn">
+      <view class='flex-item' bindtap='showScanCode'>
+        <view>
+          <image class='index-btn fir' src="../../image/fangweichaxun.png"></image>
+        </view>
+        <text>防伪查询</text>
+      </view>
+      <view class='flex-item' bindtap='toPocket'>
+        <view>
+          <image class='index-btn sec' src="../../image/fanqianbao.png"></image>
+        </view>
+        <text class='btn-title'>翻钱包</text>
+      </view>
+  </view>
+  <swiper class='slider-img' indicator-dots="true" indicator-color="#f5f5f5" indicator-active-color="#3955A2"
+    autoplay="true" interval="3000" duration="1000" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='scaleToFill' style='width: 100%; height: 200px;' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='flex-box goods-list'>
+    <view class='goods-item' wx:for="{{listInfo}}">
+      <navigator url="../goodsdetail/goodsdetail">
+        <view style='text-align: center;'>
+          <image style="dispaly: block; width: 80px; height: 80px; margin: 15px auto;" mode="widthFix" src="{{item.imgUrl}}" />
+        </view>
+        <text>{{item.name}}</text>
+        <view>
+          <text style='color: #FE0000;'>{{item.price}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
